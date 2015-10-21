@@ -6,14 +6,14 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
+    name: 'Maicon Giovani',
     lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    face: 'https://pbs.twimg.com/profile_images/3342851691/f99896f29b4ec2185a98279dd02d5d2b_400x400.jpeg' 
   }, {
     id: 1,
-    name: 'Max Lynx',
+    name: 'Felipe Rosa Reis',
     lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    face: 'https://pbs.twimg.com/profile_images/575368167452721153/4lA8Lwzd_400x400.jpeg'
   }, {
     id: 2,
     name: 'Adam Bradleyson',
