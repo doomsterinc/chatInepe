@@ -73,12 +73,19 @@ if (window.StatusBar) {
 
         function getHTML (oXHR, sTargetId) {
           var rOpen = new RegExp ("<(?!\!)\\s*([^\\s>]+)[^>]*\\s+id\\=[\"\']" + sTargetId + "[\"\'][^>]*>" ,"i"),
-              sSrc = oXHR.responseText, aExec = rOpen.exec(sSrc);
+          sSrc = oXHR.responseText, aExec = rOpen.exec(sSrc);
           return false;
         }
 
         var = oReq = new XMLHttpRequest();
         oReq.open("get", "tab-dash.html", true);
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+          console.log(this.responseXML.title);
+        }
+        xhr.open("GET", "file.html");
+        xhr.responseType = "document";
+        xhr.send();
       }
     });
 })
