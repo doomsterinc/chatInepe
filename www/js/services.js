@@ -16,12 +16,12 @@ angular.module('starter.services', [])
     face: 'https://pbs.twimg.com/profile_images/575368167452721153/4lA8Lwzd_400x400.jpeg'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
+    name: 'Rafael Brites',
     lastText: 'I should buy a boat',
     face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
   }, {
     id: 3,
-    name: 'Perry Governor',
+    name: 'David Marques',
     lastText: 'Look at my mukluks!',
     face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
   }, {
