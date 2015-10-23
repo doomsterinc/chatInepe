@@ -79,7 +79,6 @@ if (window.StatusBar) {
 
         var = oReq = new XMLHttpRequest();
         oReq.open("get", "tab-dash.html", true);
-        
       }
     });
 })
