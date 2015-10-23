@@ -82,6 +82,7 @@
 		6E6A78596CBC4B31B1663CD6 /* UNIHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FC1E2958EF464F9EB12775 /* UNIHTTPResponse.m */; };
 		EA316260303644249C642CE7 /* UNIHTTPStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8C247FC07E46BCAC289103 /* UNIHTTPStringResponse.m */; };
 		E7515A1E572844D49E14DAFA /* UNIJsonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B191E34CD413CA3BAB323 /* UNIJsonNode.m */; };
+		1E9A3E4B038847E394384990 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A761E8B2C4FAAA54C9452 /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +233,8 @@
 		1C2FEB4EA6024423B78795DE /* UNIHTTPResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UNIHTTPResponse.h"; path = "ionic-plugin-deploy/UNIHTTPResponse.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		8B7B22C2CD374307A0EAFBFE /* UNIHTTPStringResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UNIHTTPStringResponse.h"; path = "ionic-plugin-deploy/UNIHTTPStringResponse.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		49322ED0D1E64F50B3DADD4B /* UNIJsonNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UNIJsonNode.h"; path = "ionic-plugin-deploy/UNIJsonNode.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A89A761E8B2C4FAAA54C9452 /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D439505FF88045759AEE4324 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +418,8 @@
 				1C2FEB4EA6024423B78795DE /* UNIHTTPResponse.h */,
 				8B7B22C2CD374307A0EAFBFE /* UNIHTTPStringResponse.h */,
 				49322ED0D1E64F50B3DADD4B /* UNIJsonNode.h */,
+				A89A761E8B2C4FAAA54C9452 /* CDVStatusBar.m */,
+				D439505FF88045759AEE4324 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -642,6 +647,7 @@
 				6E6A78596CBC4B31B1663CD6 /* UNIHTTPResponse.m in Sources */,
 				EA316260303644249C642CE7 /* UNIHTTPStringResponse.m in Sources */,
 				E7515A1E572844D49E14DAFA /* UNIJsonNode.m in Sources */,
+				1E9A3E4B038847E394384990 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

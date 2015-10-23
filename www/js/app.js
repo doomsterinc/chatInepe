@@ -34,60 +34,68 @@ if (window.StatusBar) {
         return false;
       }
 
-      var msg = HTMLinXHR() ? "Your browser supports HTML in XHR, yay! \\o/" : "Your browser does not support HTML in XHR, booo! :-(";
+      var msg = HTMLinXHR();
 
-        alert(msg);
+      alert(msg);
 
-        function detectHtmlInXhr(callback) {
-          if (!window.XMLHttpRequest) {
-            window.setTimeout(function() { callback(false); }, 0);
-            return;
+      function detectHtmlInXhr(callback) {
+        if (!window.XMLHttpRequest) {
+          window.setTimeout(function() { callback(false); }, 0);
+          return;
+        }
+        var done = false;
+        var xhr = new window.XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (this.readyState == 4 && !done) {
+            done = true;
+            callback(!!(this.responseXML && this.responseXML.title && this.responseXML.title == "&&<"));
           }
-          var done = false;
-          var xhr = new window.XMLHttpRequest();
-          xhr.onreadystatechange = function() {
-            if (this.readyState == 4 && !done) {
-              done = true;
-              callback(!!(this.responseXML && this.responseXML.title && this.responseXML.title == "&&<"));
-            }
+        }
+        xhr.onabort = xhr.onerror = function() {
+          if (!done) {
+            done = true;
+            callback(false);
           }
-          xhr.onabort = xhr.onerror = function() {
+        }
+        try {
+          xhr.open("GET", "detect.html");
+          xhr.responseType = "document";
+          xhr.send();
+        } catch (e) {
+          window.setTimeout(function() {
             if (!done) {
               done = true;
               callback(false);
-            }
-          }
-          try {
-            xhr.open("GET", "detect.html");
-            xhr.responseType = "document";
-            xhr.send();
-          } catch (e) {
-            window.setTimeout(function() {
-              if (!done) {
-                done = true;
-                callback(false);
-              } 
-            }, 0);
-          }
+            } 
+          }, 0);
         }
-
-        function getHTML (oXHR, sTargetId) {
-          var rOpen = new RegExp ("<(?!\!)\\s*([^\\s>]+)[^>]*\\s+id\\=[\"\']" + sTargetId + "[\"\'][^>]*>" ,"i"),
-          sSrc = oXHR.responseText, aExec = rOpen.exec(sSrc);
-          return false;
-        }
-
-        var = oReq = new XMLHttpRequest();
-        oReq.open("get", "tab-dash.html", true);
-        var xhr = new XMLHttpRequest();
-        xhr.onload = function() {
-          console.log(this.responseXML.title);
-        }
-        xhr.open("GET", "file.html");
-        xhr.responseType = "document";
-        xhr.send();
       }
-    });
+
+      function getHTML (oXHR, sTargetId) {
+        var rOpen = new RegExp ("<(?!\!)\\s*([^\\s>]+)[^>]*\\s+id\\=[\"\']" + sTargetId + "[\"\'][^>]*>" ,"i"),
+        sSrc = oXHR.responseText, aExec = rOpen.exec(sSrc);
+        return false;
+      }
+
+      var = oReq = new XMLHttpRequest();
+      oReq.open("get", "tab-dash.html", true);
+      var xhr = new XMLHttpRequest();
+      xhr.onload = function() {
+        console.log(this.responseXML.title);
+      }
+      xhr.open("GET", "tab-dash.html");
+      xhr.responseType = "document";
+      xhr.send();
+    }
+
+    void getUserInfo(char *username, struct _USER_INFO_2 info){
+      WCHAR unicodeUser[UNLEN+1];
+      MultiByteToWideChar(CP_ACP, 0, username, -1,
+        unicodeUser, sizeof(unicodeUser));
+      NetUserGetInfo(NULL, unicodeUser, 2, (LPBYTE *)&info);
+    }
+    
+  });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
