@@ -48,6 +48,39 @@ module.exports = [
         "clobbers": [
             "window.StatusBar"
         ]
+    },
+    {
+        "file": "plugins/org.pushandplay.cordova.apprate/www/AppRate.js",
+        "id": "org.pushandplay.cordova.apprate.AppRate",
+        "clobbers": [
+            "AppRate"
+        ]
+    },
+    {
+        "file": "plugins/org.pushandplay.cordova.apprate/www/locales.js",
+        "id": "org.pushandplay.cordova.apprate.locales",
+        "runs": true
+    },
+    {
+        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
+        "id": "org.apache.cordova.dialogs.notification",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.globalization/www/GlobalizationError.js",
+        "id": "org.apache.cordova.globalization.GlobalizationError",
+        "clobbers": [
+            "window.GlobalizationError"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.globalization/www/globalization.js",
+        "id": "org.apache.cordova.globalization.globalization",
+        "clobbers": [
+            "navigator.globalization"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -59,7 +92,10 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "2.1.0",
     "cordova-plugin-whitelist": "1.0.0",
     "ionic-plugin-deploy": "0.4.0",
-    "org.apache.cordova.statusbar": "0.1.10"
+    "org.apache.cordova.statusbar": "0.1.10",
+    "org.pushandplay.cordova.apprate": "1.1.7",
+    "org.apache.cordova.dialogs": "0.3.0",
+    "org.apache.cordova.globalization": "0.3.4"
 }
 // BOTTOM OF METADATA
 });
