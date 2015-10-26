@@ -25,6 +25,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -55,6 +59,14 @@
                         {
                             "xml": "<feature name=\"IonicDeploy\"><param name=\"android-package\" value=\"com.ionic.deploy.IonicDeploy\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ActionSheet\"><param name=\"android-package\" value=\"nl.xservices.plugins.actionsheet.ActionSheet\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -84,6 +96,12 @@
             "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
         },
         "ionic-plugin-deploy": {
+            "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
+        },
+        "cordova-plugin-actionsheet": {
+            "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
+        },
+        "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
         }
     },

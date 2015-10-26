@@ -69,6 +69,41 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-actionsheet/www/ActionSheet.js",
+        "id": "cordova-plugin-actionsheet.ActionSheet",
+        "clobbers": [
+            "window.plugins.actionsheet"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+        "id": "cordova-plugin-camera.Camera",
+        "clobbers": [
+            "Camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+        "id": "cordova-plugin-camera.CameraPopoverOptions",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/Camera.js",
+        "id": "cordova-plugin-camera.camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js",
+        "id": "cordova-plugin-camera.CameraPopoverHandle",
+        "clobbers": [
+            "CameraPopoverHandle"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
         "id": "org.apache.cordova.dialogs.notification",
         "merges": [
@@ -102,6 +137,8 @@ module.exports.metadata =
     "org.apache.cordova.statusbar": "0.1.10",
     "org.pushandplay.cordova.apprate": "1.1.7",
     "cordova-plugin-admob": "2.2.0",
+    "cordova-plugin-actionsheet": "2.0.1",
+    "cordova-plugin-camera": "1.2.0",
     "org.apache.cordova.dialogs": "0.3.0",
     "org.apache.cordova.globalization": "0.3.4",
     "com.google.admobsdk": "6.12.2"
