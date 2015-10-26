@@ -95,6 +95,14 @@ module.exports = [
         "clobbers": [
             "ble"
         ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.badge/www/badge.js",
+        "id": "de.appplant.cordova.plugin.badge.Badge",
+        "clobbers": [
+            "plugin.notification.badge",
+            "cordova.plugins.notification.badge"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -111,6 +119,7 @@ module.exports.metadata =
     "cordova-plugin-actionsheet": "2.0.1",
     "cordova-plugin-camera": "1.2.0",
     "cordova-plugin-ble-central": "1.0.2",
+    "de.appplant.cordova.plugin.badge": "0.7.1",
     "com.google.playservices": "19.0.0"
 }
 // BOTTOM OF METADATA

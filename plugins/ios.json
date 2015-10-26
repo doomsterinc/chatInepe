@@ -67,6 +67,10 @@
                         {
                             "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Badge\"><param name=\"ios-package\" value=\"APPBadge\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": [
@@ -235,6 +239,9 @@
         },
         "cordova-plugin-ble-central": {
             "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "de.appplant.cordova.plugin.badge": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },
     "dependent_plugins": {
@@ -245,6 +252,9 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "com.google.admobsdk": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "de.appplant.cordova.common.registerusernotificationsettings": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     }

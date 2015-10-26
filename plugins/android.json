@@ -15,6 +15,10 @@
                         {
                             "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<activity android:exported=\"false\" android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.badge.LaunchActivity\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
                         }
                     ],
                     "/*": [
@@ -77,6 +81,10 @@
                         {
                             "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Badge\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.badge.Badge\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": [
@@ -121,6 +129,9 @@
             "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
         },
         "cordova-plugin-ble-central": {
+            "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
+        },
+        "de.appplant.cordova.plugin.badge": {
             "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
         }
     },

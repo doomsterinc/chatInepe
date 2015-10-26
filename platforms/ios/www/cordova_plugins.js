@@ -111,6 +111,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/de.appplant.cordova.plugin.badge/www/badge.js",
+        "id": "de.appplant.cordova.plugin.badge.Badge",
+        "clobbers": [
+            "plugin.notification.badge",
+            "cordova.plugins.notification.badge"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
         "id": "org.apache.cordova.dialogs.notification",
         "merges": [
@@ -147,9 +155,11 @@ module.exports.metadata =
     "cordova-plugin-actionsheet": "2.0.1",
     "cordova-plugin-camera": "1.2.0",
     "cordova-plugin-ble-central": "1.0.2",
+    "de.appplant.cordova.plugin.badge": "0.7.1",
     "org.apache.cordova.dialogs": "0.3.0",
     "org.apache.cordova.globalization": "0.3.4",
-    "com.google.admobsdk": "6.12.2"
+    "com.google.admobsdk": "6.12.2",
+    "de.appplant.cordova.common.registerusernotificationsettings": "1.0.1"
 }
 // BOTTOM OF METADATA
 });
