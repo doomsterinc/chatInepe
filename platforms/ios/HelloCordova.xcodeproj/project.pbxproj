@@ -106,6 +106,10 @@
 		BF9576FB79264AB69B3E6803 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA706A2F35E4C5FB61025EA /* CDVJpegHeaderWriter.m */; };
 		E822AD4852FD41ECBBF89B69 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BAA0C11CBF43ED9A0DDF0E /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C51FD83BC6F64C75A08C2B6C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A6DA4E8BCA40B8969202C5 /* CoreLocation.framework */; };
+		437F5EEF4E944FF0AED75E15 /* BLECentralPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C99AD6C3B445F9B7FEF2EC /* BLECentralPlugin.m */; };
+		22FD09A5B63F4F81B1973753 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F03A0C6711477A88D5244E /* CBPeripheral+Extensions.m */; };
+		9537F4E523B64F3CBD0513EF /* BLECommandContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E6BEDAEB554A5D9888C6D7 /* BLECommandContext.m */; };
+		BDBB2A1C69B249E7A6AB47D2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B492CB0B774D28970EA691 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -316,6 +320,13 @@
 		E9CCF570D7CD417A8C0E4E4F /* CDVExif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVExif.h"; path = "cordova-plugin-camera/CDVExif.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		85BAA0C11CBF43ED9A0DDF0E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		D5A6DA4E8BCA40B8969202C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		D4C99AD6C3B445F9B7FEF2EC /* BLECentralPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BLECentralPlugin.m"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECentralPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		B9F03A0C6711477A88D5244E /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+Extensions.m"; path = "cordova-plugin-ble-central/BLECentralPlugin/CBPeripheral+Extensions.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		48E6BEDAEB554A5D9888C6D7 /* BLECommandContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BLECommandContext.m"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECommandContext.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		74C8C7A2538C407E835BCCA4 /* BLECentralPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BLECentralPlugin.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECentralPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		11C84E687C784D529E73BF11 /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Extensions.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		F7C2C281BCF94FBF88291D63 /* BLECommandContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BLECommandContext.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECommandContext.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E6B492CB0B774D28970EA691 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +352,7 @@
 				18B75986A2FF491E9E27E206 /* UIKit.framework in Frameworks */,
 				E822AD4852FD41ECBBF89B69 /* ImageIO.framework in Frameworks */,
 				C51FD83BC6F64C75A08C2B6C /* CoreLocation.framework in Frameworks */,
+				BDBB2A1C69B249E7A6AB47D2 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +440,7 @@
 				8A86BD9306494391A61E1848 /* UIKit.framework */,
 				85BAA0C11CBF43ED9A0DDF0E /* ImageIO.framework */,
 				D5A6DA4E8BCA40B8969202C5 /* CoreLocation.framework */,
+				E6B492CB0B774D28970EA691 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -573,6 +586,12 @@
 				43B1BDFB0C234EA5A1846E49 /* CDVCamera.h */,
 				964FEEE7EBC64C16AA12ACBD /* CDVJpegHeaderWriter.h */,
 				E9CCF570D7CD417A8C0E4E4F /* CDVExif.h */,
+				D4C99AD6C3B445F9B7FEF2EC /* BLECentralPlugin.m */,
+				B9F03A0C6711477A88D5244E /* CBPeripheral+Extensions.m */,
+				48E6BEDAEB554A5D9888C6D7 /* BLECommandContext.m */,
+				74C8C7A2538C407E835BCCA4 /* BLECentralPlugin.h */,
+				11C84E687C784D529E73BF11 /* CBPeripheral+Extensions.h */,
+				F7C2C281BCF94FBF88291D63 /* BLECommandContext.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -810,6 +829,9 @@
 				AA879B7DDF4F44AEA1A10134 /* UIImage+CropScaleOrientation.m in Sources */,
 				8DFDBE54A6964EF7B93B17B7 /* CDVCamera.m in Sources */,
 				BF9576FB79264AB69B3E6803 /* CDVJpegHeaderWriter.m in Sources */,
+				437F5EEF4E944FF0AED75E15 /* BLECentralPlugin.m in Sources */,
+				22FD09A5B63F4F81B1973753 /* CBPeripheral+Extensions.m in Sources */,
+				9537F4E523B64F3CBD0513EF /* BLECommandContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

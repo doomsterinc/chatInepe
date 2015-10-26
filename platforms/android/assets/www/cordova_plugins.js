@@ -88,6 +88,13 @@ module.exports = [
         "clobbers": [
             "CameraPopoverHandle"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-ble-central/www/ble.js",
+        "id": "cordova-plugin-ble-central.ble",
+        "clobbers": [
+            "ble"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -103,6 +110,7 @@ module.exports.metadata =
     "ionic-plugin-deploy": "0.4.0",
     "cordova-plugin-actionsheet": "2.0.1",
     "cordova-plugin-camera": "1.2.0",
+    "cordova-plugin-ble-central": "1.0.2",
     "com.google.playservices": "19.0.0"
 }
 // BOTTOM OF METADATA

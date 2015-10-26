@@ -104,6 +104,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-ble-central/www/ble.js",
+        "id": "cordova-plugin-ble-central.ble",
+        "clobbers": [
+            "ble"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
         "id": "org.apache.cordova.dialogs.notification",
         "merges": [
@@ -139,6 +146,7 @@ module.exports.metadata =
     "cordova-plugin-admob": "2.2.0",
     "cordova-plugin-actionsheet": "2.0.1",
     "cordova-plugin-camera": "1.2.0",
+    "cordova-plugin-ble-central": "1.0.2",
     "org.apache.cordova.dialogs": "0.3.0",
     "org.apache.cordova.globalization": "0.3.4",
     "com.google.admobsdk": "6.12.2"
