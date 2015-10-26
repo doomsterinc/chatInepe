@@ -51,6 +51,10 @@
                         {
                             "xml": "<feature name=\"AppRate\"><param name=\"ios-package\" value=\"CDVAppRate\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AdMob\"><param name=\"ios-package\" value=\"CDVAdMob\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -60,16 +64,74 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": false,
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "AudioToolbox.framework": [
                         {
                             "xml": true,
                             "count": 1
+                        },
+                        {
+                            "xml": false,
+                            "count": 1
                         }
                     ],
                     "StoreKit.framework": [
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "AdSupport.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreTelephony.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "EventKit.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "EventKitUI.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Foundation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "MessageUI.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "UIKit.framework": [
                         {
                             "xml": false,
                             "count": 1
@@ -103,6 +165,9 @@
         },
         "org.pushandplay.cordova.apprate": {
             "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "cordova-plugin-admob": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },
     "dependent_plugins": {
@@ -110,6 +175,9 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "org.apache.cordova.globalization": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "com.google.admobsdk": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     }

@@ -59,4 +59,7 @@
     <feature name="AppRate">
         <param name="ios-package" value="CDVAppRate" />
     </feature>
+    <feature name="AdMob">
+        <param name="ios-package" value="CDVAdMob" />
+    </feature>
 </widget>
