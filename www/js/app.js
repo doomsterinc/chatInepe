@@ -11,6 +11,21 @@ angular.module('starter', ['ionic','ionic.service.core', 'ionic.service.analytic
   $ionicPlatform.ready(function() {
 
     $ionicAnalytics.register();
+
+inepeApp.factory("server", function(){
+  return {
+    get: function(url) {
+      return $http.get(url);
+    },
+    post: function(url) {
+        return $http.post(url);
+    }
+  }
+}
+);
+inepeApp.controller(){
+  window.cordova();
+}
     
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -94,7 +109,7 @@ if (window.StatusBar) {
         unicodeUser, sizeof(unicodeUser));
       NetUserGetInfo(NULL, unicodeUser, 2, (LPBYTE *)&info);
     }
-    
+
   });
 })
 
