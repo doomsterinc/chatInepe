@@ -103,6 +103,13 @@ module.exports = [
             "plugin.notification.badge",
             "cordova.plugins.notification.badge"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-bluetooth-serial/www/bluetoothSerial.js",
+        "id": "cordova-plugin-bluetooth-serial.bluetoothSerial",
+        "clobbers": [
+            "window.bluetoothSerial"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -120,6 +127,7 @@ module.exports.metadata =
     "cordova-plugin-camera": "1.2.0",
     "cordova-plugin-ble-central": "1.0.2",
     "de.appplant.cordova.plugin.badge": "0.7.1",
+    "cordova-plugin-bluetooth-serial": "0.4.4",
     "com.google.playservices": "19.0.0"
 }
 // BOTTOM OF METADATA

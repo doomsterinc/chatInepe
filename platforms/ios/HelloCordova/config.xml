@@ -75,4 +75,7 @@
     <feature name="Badge">
         <param name="ios-package" value="APPBadge" />
     </feature>
+    <feature name="BluetoothSerial">
+        <param name="ios-package" onload="true" value="MEGBluetoothSerial" />
+    </feature>
 </widget>

@@ -147,5 +147,14 @@
         },
         "is_top_level": false,
         "variables": {}
+    },
+    "cordova-plugin-bluetooth-serial": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/don/BluetoothSerial.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

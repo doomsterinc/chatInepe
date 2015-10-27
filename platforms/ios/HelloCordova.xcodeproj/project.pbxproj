@@ -113,6 +113,9 @@
 		48A84C0371D24F3ABAC6B1A8 /* AppDelegate+APPRegisterUserNotificationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D0CE173A24748BA891550 /* AppDelegate+APPRegisterUserNotificationSettings.m */; };
 		0716F727AE1F40D2815536F7 /* APPBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881837E2594478293FA2A43 /* APPBadge.m */; };
 		566CE9BBEFDD4EEEB0E162A7 /* UIApplication+APPBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA463BB78246C18BCDA85C /* UIApplication+APPBadge.m */; };
+		BB19DCC5BC334FA3A84514EE /* MEGBluetoothSerial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF65A33FC45BE9F37BF33 /* MEGBluetoothSerial.m */; };
+		B684B285B6724AA0870E655F /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0130706A44A3AC6205D5 /* CBPeripheral+Extensions.m */; };
+		A89AA665E9B149829937549F /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8B9B560D0E44AEA1630872 /* BLE.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,6 +339,13 @@
 		8DFA463BB78246C18BCDA85C /* UIApplication+APPBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+APPBadge.m"; path = "de.appplant.cordova.plugin.badge/UIApplication+APPBadge.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		33B170AA236547FCADB09FD3 /* APPBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "APPBadge.h"; path = "de.appplant.cordova.plugin.badge/APPBadge.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		5FF6387E9AFC4D8DBC73563A /* UIApplication+APPBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIApplication+APPBadge.h"; path = "de.appplant.cordova.plugin.badge/UIApplication+APPBadge.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6FDEF65A33FC45BE9F37BF33 /* MEGBluetoothSerial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MEGBluetoothSerial.m"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/MEGBluetoothSerial.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		628E0130706A44A3AC6205D5 /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+Extensions.m"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/CBPeripheral+Extensions.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		AF8B9B560D0E44AEA1630872 /* BLE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BLE.m"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/BLE.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		EBFBE1F53D2A448E8B4E6D4B /* MEGBluetoothSerial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MEGBluetoothSerial.h"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/MEGBluetoothSerial.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4160A1250A42419B95B9D33F /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Extensions.h"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		5B454EB30838456D8E1FA597 /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BLE.h"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/BLE.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7FB4D60ABC5444F087A0E762 /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BLEDefines.h"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/BLEDefines.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -607,6 +617,13 @@
 				8DFA463BB78246C18BCDA85C /* UIApplication+APPBadge.m */,
 				33B170AA236547FCADB09FD3 /* APPBadge.h */,
 				5FF6387E9AFC4D8DBC73563A /* UIApplication+APPBadge.h */,
+				6FDEF65A33FC45BE9F37BF33 /* MEGBluetoothSerial.m */,
+				628E0130706A44A3AC6205D5 /* CBPeripheral+Extensions.m */,
+				AF8B9B560D0E44AEA1630872 /* BLE.m */,
+				EBFBE1F53D2A448E8B4E6D4B /* MEGBluetoothSerial.h */,
+				4160A1250A42419B95B9D33F /* CBPeripheral+Extensions.h */,
+				5B454EB30838456D8E1FA597 /* BLE.h */,
+				7FB4D60ABC5444F087A0E762 /* BLEDefines.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -850,6 +867,9 @@
 				48A84C0371D24F3ABAC6B1A8 /* AppDelegate+APPRegisterUserNotificationSettings.m in Sources */,
 				0716F727AE1F40D2815536F7 /* APPBadge.m in Sources */,
 				566CE9BBEFDD4EEEB0E162A7 /* UIApplication+APPBadge.m in Sources */,
+				BB19DCC5BC334FA3A84514EE /* MEGBluetoothSerial.m in Sources */,
+				B684B285B6724AA0870E655F /* CBPeripheral+Extensions.m in Sources */,
+				A89AA665E9B149829937549F /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
