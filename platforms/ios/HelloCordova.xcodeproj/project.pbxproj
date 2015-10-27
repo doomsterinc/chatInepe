@@ -116,6 +116,14 @@
 		BB19DCC5BC334FA3A84514EE /* MEGBluetoothSerial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF65A33FC45BE9F37BF33 /* MEGBluetoothSerial.m */; };
 		B684B285B6724AA0870E655F /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0130706A44A3AC6205D5 /* CBPeripheral+Extensions.m */; };
 		A89AA665E9B149829937549F /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8B9B560D0E44AEA1630872 /* BLE.m */; };
+		F211CBA02310498B9A09A992 /* CDVBarcodeScanner.mm in Resources */ = {isa = PBXBuildFile; fileRef = 87118BA6B0984921AD3B7A9E /* CDVBarcodeScanner.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5DEF305034344EF997F73B4 /* zxing-all-in-one.cpp in Resources */ = {isa = PBXBuildFile; fileRef = E8489D9C4B014E6EA0C94DBB /* zxing-all-in-one.cpp */; };
+		7C41738F93C54669A383B0D7 /* scannerOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0293517DFE7E4F6F955AE208 /* scannerOverlay.xib */; };
+		5BAB1276111248A094A5F9B3 /* CDVBarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 195A968FD00E4CAE9498A562 /* CDVBarcodeScanner.bundle */; };
+		944A70F318A54FCE99636B77 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA098E7C0B994D08BF1C914E /* libiconv.dylib */; };
+		B26B73BC5C6A49558414E560 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FF55466417430D92023253 /* CoreVideo.framework */; };
+		0578DA66D7044D1D918C4DC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D7B63353F48ABAF215859 /* QuartzCore.framework */; };
+		7F83C59C6D364864ACB5C8B6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87847E970C90487ABAAE11E2 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,6 +354,15 @@
 		4160A1250A42419B95B9D33F /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Extensions.h"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		5B454EB30838456D8E1FA597 /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BLE.h"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/BLE.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		7FB4D60ABC5444F087A0E762 /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BLEDefines.h"; path = "cordova-plugin-bluetooth-serial/BluetoothSerial/BLEDefines.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		87118BA6B0984921AD3B7A9E /* CDVBarcodeScanner.mm */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "CDVBarcodeScanner.mm"; path = "phonegap-plugin-barcodescanner/CDVBarcodeScanner.mm"; sourceTree = "<group>"; fileEncoding = 4; };
+		E8489D9C4B014E6EA0C94DBB /* zxing-all-in-one.cpp */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "zxing-all-in-one.cpp"; path = "phonegap-plugin-barcodescanner/zxing-all-in-one.cpp"; sourceTree = "<group>"; fileEncoding = 4; };
+		32D35BD515D04E64A1A70E93 /* zxing-all-in-one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "zxing-all-in-one.h"; path = "phonegap-plugin-barcodescanner/zxing-all-in-one.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		0293517DFE7E4F6F955AE208 /* scannerOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "scannerOverlay.xib"; path = "scannerOverlay.xib"; sourceTree = "<group>"; fileEncoding = 4; };
+		195A968FD00E4CAE9498A562 /* CDVBarcodeScanner.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVBarcodeScanner.bundle"; path = "CDVBarcodeScanner.bundle"; sourceTree = "<group>"; };
+		BA098E7C0B994D08BF1C914E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		55FF55466417430D92023253 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		253D7B63353F48ABAF215859 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		87847E970C90487ABAAE11E2 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreImage.framework"; path = "System/Library/Frameworks/CoreImage.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +389,10 @@
 				E822AD4852FD41ECBBF89B69 /* ImageIO.framework in Frameworks */,
 				C51FD83BC6F64C75A08C2B6C /* CoreLocation.framework in Frameworks */,
 				BDBB2A1C69B249E7A6AB47D2 /* CoreBluetooth.framework in Frameworks */,
+				944A70F318A54FCE99636B77 /* libiconv.dylib in Frameworks */,
+				B26B73BC5C6A49558414E560 /* CoreVideo.framework in Frameworks */,
+				0578DA66D7044D1D918C4DC9 /* QuartzCore.framework in Frameworks */,
+				7F83C59C6D364864ACB5C8B6 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +455,8 @@
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* HelloCordova-Info.plist */,
 				6C5E0775F3F04162B0108532 /* CDVNotification.bundle */,
+				0293517DFE7E4F6F955AE208 /* scannerOverlay.xib */,
+				195A968FD00E4CAE9498A562 /* CDVBarcodeScanner.bundle */,
 			);
 			name = Resources;
 			path = "HelloCordova/Resources";
@@ -460,6 +483,10 @@
 				85BAA0C11CBF43ED9A0DDF0E /* ImageIO.framework */,
 				D5A6DA4E8BCA40B8969202C5 /* CoreLocation.framework */,
 				E6B492CB0B774D28970EA691 /* CoreBluetooth.framework */,
+				BA098E7C0B994D08BF1C914E /* libiconv.dylib */,
+				55FF55466417430D92023253 /* CoreVideo.framework */,
+				253D7B63353F48ABAF215859 /* QuartzCore.framework */,
+				87847E970C90487ABAAE11E2 /* CoreImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -624,6 +651,9 @@
 				4160A1250A42419B95B9D33F /* CBPeripheral+Extensions.h */,
 				5B454EB30838456D8E1FA597 /* BLE.h */,
 				7FB4D60ABC5444F087A0E762 /* BLEDefines.h */,
+				87118BA6B0984921AD3B7A9E /* CDVBarcodeScanner.mm */,
+				E8489D9C4B014E6EA0C94DBB /* zxing-all-in-one.cpp */,
+				32D35BD515D04E64A1A70E93 /* zxing-all-in-one.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -778,6 +808,8 @@
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
 				AF96B3E27AE849A48D9FB849 /* CDVNotification.bundle in Resources */,
+				7C41738F93C54669A383B0D7 /* scannerOverlay.xib in Resources */,
+				5BAB1276111248A094A5F9B3 /* CDVBarcodeScanner.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,6 +902,8 @@
 				BB19DCC5BC334FA3A84514EE /* MEGBluetoothSerial.m in Sources */,
 				B684B285B6724AA0870E655F /* CBPeripheral+Extensions.m in Sources */,
 				A89AA665E9B149829937549F /* BLE.m in Sources */,
+				F211CBA02310498B9A09A992 /* CDVBarcodeScanner.mm in Resources */,
+				C5DEF305034344EF997F73B4 /* zxing-all-in-one.cpp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

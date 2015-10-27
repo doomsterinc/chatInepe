@@ -110,6 +110,13 @@ module.exports = [
         "clobbers": [
             "window.bluetoothSerial"
         ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+        "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+        "clobbers": [
+            "cordova.plugins.barcodeScanner"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -128,6 +135,7 @@ module.exports.metadata =
     "cordova-plugin-ble-central": "1.0.2",
     "de.appplant.cordova.plugin.badge": "0.7.1",
     "cordova-plugin-bluetooth-serial": "0.4.4",
+    "phonegap-plugin-barcodescanner": "4.0.1",
     "com.google.playservices": "19.0.0"
 }
 // BOTTOM OF METADATA
