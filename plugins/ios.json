@@ -75,6 +75,10 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Brightness\"><param name=\"ios-package\" value=\"Brightness\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": [
@@ -164,6 +168,10 @@
                     "UIKit.framework": [
                         {
                             "xml": false,
+                            "count": 1
+                        },
+                        {
+                            "xml": true,
                             "count": 1
                         }
                     ],
@@ -279,6 +287,9 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "cordova.plugin.Brightness": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },

@@ -81,4 +81,7 @@
     <feature name="BarcodeScanner">
         <param name="ios-package" value="CDVBarcodeScanner" />
     </feature>
+    <feature name="Brightness">
+        <param name="ios-package" value="Brightness" />
+    </feature>
 </widget>

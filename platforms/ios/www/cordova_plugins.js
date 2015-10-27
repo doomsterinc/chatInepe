@@ -133,6 +133,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova.plugin.Brightness/www/brightness.js",
+        "id": "cordova.plugin.Brightness.Brightness",
+        "clobbers": [
+            "cordova.plugins.brightness"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
         "id": "org.apache.cordova.dialogs.notification",
         "merges": [
@@ -172,6 +179,7 @@ module.exports.metadata =
     "de.appplant.cordova.plugin.badge": "0.7.1",
     "cordova-plugin-bluetooth-serial": "0.4.4",
     "phonegap-plugin-barcodescanner": "4.0.1",
+    "cordova.plugin.Brightness": "0.1.1",
     "org.apache.cordova.dialogs": "0.3.0",
     "org.apache.cordova.globalization": "0.3.4",
     "com.google.admobsdk": "6.12.2",

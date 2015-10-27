@@ -45,6 +45,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\" />",
+                            "count": 1
                         }
                     ],
                     "/manifest": [
@@ -112,6 +116,10 @@
                         },
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Brightness\"><param name=\"android-package\" value=\"org.apache.cordova.plugin.Brightness.BrightnessPlugin\" /></feature>",
                             "count": 1
                         }
                     ],
@@ -652,6 +660,9 @@
             "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
         },
         "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
+        },
+        "cordova.plugin.Brightness": {
             "PACKAGE_NAME": "com.ionicframework.inepeapp851121"
         }
     },

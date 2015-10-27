@@ -124,6 +124,7 @@
 		B26B73BC5C6A49558414E560 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FF55466417430D92023253 /* CoreVideo.framework */; };
 		0578DA66D7044D1D918C4DC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D7B63353F48ABAF215859 /* QuartzCore.framework */; };
 		7F83C59C6D364864ACB5C8B6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87847E970C90487ABAAE11E2 /* CoreImage.framework */; };
+		1F623B0FD0FC4AC69D082B86 /* Brightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F3413B19204277A3C66302 /* Brightness.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -363,6 +364,8 @@
 		55FF55466417430D92023253 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		253D7B63353F48ABAF215859 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		87847E970C90487ABAAE11E2 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreImage.framework"; path = "System/Library/Frameworks/CoreImage.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		21F3413B19204277A3C66302 /* Brightness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Brightness.m"; path = "cordova.plugin.Brightness/Brightness.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		7D69C85233EE48A8827065D9 /* Brightness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Brightness.h"; path = "cordova.plugin.Brightness/Brightness.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -654,6 +657,8 @@
 				87118BA6B0984921AD3B7A9E /* CDVBarcodeScanner.mm */,
 				E8489D9C4B014E6EA0C94DBB /* zxing-all-in-one.cpp */,
 				32D35BD515D04E64A1A70E93 /* zxing-all-in-one.h */,
+				21F3413B19204277A3C66302 /* Brightness.m */,
+				7D69C85233EE48A8827065D9 /* Brightness.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -904,6 +909,7 @@
 				A89AA665E9B149829937549F /* BLE.m in Sources */,
 				F211CBA02310498B9A09A992 /* CDVBarcodeScanner.mm in Resources */,
 				C5DEF305034344EF997F73B4 /* zxing-all-in-one.cpp in Resources */,
+				1F623B0FD0FC4AC69D082B86 /* Brightness.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

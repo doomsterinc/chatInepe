@@ -117,6 +117,13 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.barcodeScanner"
         ]
+    },
+    {
+        "file": "plugins/cordova.plugin.Brightness/www/brightness.js",
+        "id": "cordova.plugin.Brightness.Brightness",
+        "clobbers": [
+            "cordova.plugins.brightness"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -136,6 +143,7 @@ module.exports.metadata =
     "de.appplant.cordova.plugin.badge": "0.7.1",
     "cordova-plugin-bluetooth-serial": "0.4.4",
     "phonegap-plugin-barcodescanner": "4.0.1",
+    "cordova.plugin.Brightness": "0.1.1",
     "com.google.playservices": "19.0.0"
 }
 // BOTTOM OF METADATA
