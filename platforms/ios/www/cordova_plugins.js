@@ -140,6 +140,17 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-calendar/www/Calendar.js",
+        "id": "cordova-plugin-calendar.Calendar",
+        "clobbers": [
+            "Calendar"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-calendar/test/tests.js",
+        "id": "cordova-plugin-calendar.tests"
+    },
+    {
         "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
         "id": "org.apache.cordova.dialogs.notification",
         "merges": [
@@ -180,6 +191,7 @@ module.exports.metadata =
     "cordova-plugin-bluetooth-serial": "0.4.4",
     "phonegap-plugin-barcodescanner": "4.0.1",
     "cordova.plugin.Brightness": "0.1.1",
+    "cordova-plugin-calendar": "4.4.4",
     "org.apache.cordova.dialogs": "0.3.0",
     "org.apache.cordova.globalization": "0.3.4",
     "com.google.admobsdk": "6.12.2",

@@ -78,4 +78,7 @@
     <feature name="Brightness">
         <param name="android-package" value="org.apache.cordova.plugin.Brightness.BrightnessPlugin" />
     </feature>
+    <feature name="Calendar">
+        <param name="android-package" value="nl.xservices.plugins.Calendar" />
+    </feature>
 </widget>

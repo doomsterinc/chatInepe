@@ -124,6 +124,17 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.brightness"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-calendar/www/Calendar.js",
+        "id": "cordova-plugin-calendar.Calendar",
+        "clobbers": [
+            "Calendar"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-calendar/test/tests.js",
+        "id": "cordova-plugin-calendar.tests"
     }
 ];
 module.exports.metadata = 
@@ -144,6 +155,7 @@ module.exports.metadata =
     "cordova-plugin-bluetooth-serial": "0.4.4",
     "phonegap-plugin-barcodescanner": "4.0.1",
     "cordova.plugin.Brightness": "0.1.1",
+    "cordova-plugin-calendar": "4.4.4",
     "com.google.playservices": "19.0.0"
 }
 // BOTTOM OF METADATA

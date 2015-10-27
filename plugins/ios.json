@@ -79,6 +79,10 @@
                         {
                             "xml": "<feature name=\"Brightness\"><param name=\"ios-package\" value=\"Brightness\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Calendar\"><param name=\"ios-package\" value=\"Calendar\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": [
@@ -138,13 +142,13 @@
                     "EventKit.framework": [
                         {
                             "xml": false,
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "EventKitUI.framework": [
                         {
                             "xml": false,
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "Foundation.framework": [
@@ -290,6 +294,9 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "cordova.plugin.Brightness": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "cordova-plugin-calendar": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },

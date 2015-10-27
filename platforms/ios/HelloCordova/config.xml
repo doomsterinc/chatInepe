@@ -84,4 +84,7 @@
     <feature name="Brightness">
         <param name="ios-package" value="Brightness" />
     </feature>
+    <feature name="Calendar">
+        <param name="ios-package" value="Calendar" />
+    </feature>
 </widget>
