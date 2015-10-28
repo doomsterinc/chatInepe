@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.ionic.keyboard/www/keyboard.js",
-        "id": "com.ionic.keyboard.keyboard",
-        "clobbers": [
-            "cordova.plugins.Keyboard"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-console/www/logger.js",
         "id": "cordova-plugin-console.logger",
         "clobbers": [
@@ -36,166 +29,30 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/ionic-plugin-deploy/www/ionicdeploy.js",
-        "id": "ionic-plugin-deploy.IonicDeploy",
-        "clobbers": [
-            "IonicDeploy"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.statusbar/www/statusbar.js",
-        "id": "org.apache.cordova.statusbar.statusbar",
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
         "clobbers": [
             "window.StatusBar"
         ]
     },
     {
-        "file": "plugins/org.pushandplay.cordova.apprate/www/AppRate.js",
-        "id": "org.pushandplay.cordova.apprate.AppRate",
+        "file": "plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
+        "id": "ionic-plugin-keyboard.keyboard",
         "clobbers": [
-            "AppRate"
-        ]
-    },
-    {
-        "file": "plugins/org.pushandplay.cordova.apprate/www/locales.js",
-        "id": "org.pushandplay.cordova.apprate.locales",
+            "cordova.plugins.Keyboard"
+        ],
         "runs": true
-    },
-    {
-        "file": "plugins/cordova-plugin-admob/www/AdMob.js",
-        "id": "cordova-plugin-admob.AdMob",
-        "clobbers": [
-            "window.plugins.AdMob"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-actionsheet/www/ActionSheet.js",
-        "id": "cordova-plugin-actionsheet.ActionSheet",
-        "clobbers": [
-            "window.plugins.actionsheet"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
-        "id": "cordova-plugin-camera.Camera",
-        "clobbers": [
-            "Camera"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
-        "id": "cordova-plugin-camera.CameraPopoverOptions",
-        "clobbers": [
-            "CameraPopoverOptions"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-camera/www/Camera.js",
-        "id": "cordova-plugin-camera.camera",
-        "clobbers": [
-            "navigator.camera"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js",
-        "id": "cordova-plugin-camera.CameraPopoverHandle",
-        "clobbers": [
-            "CameraPopoverHandle"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-ble-central/www/ble.js",
-        "id": "cordova-plugin-ble-central.ble",
-        "clobbers": [
-            "ble"
-        ]
-    },
-    {
-        "file": "plugins/de.appplant.cordova.plugin.badge/www/badge.js",
-        "id": "de.appplant.cordova.plugin.badge.Badge",
-        "clobbers": [
-            "plugin.notification.badge",
-            "cordova.plugins.notification.badge"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-bluetooth-serial/www/bluetoothSerial.js",
-        "id": "cordova-plugin-bluetooth-serial.bluetoothSerial",
-        "clobbers": [
-            "window.bluetoothSerial"
-        ]
-    },
-    {
-        "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-        "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-        "clobbers": [
-            "cordova.plugins.barcodeScanner"
-        ]
-    },
-    {
-        "file": "plugins/cordova.plugin.Brightness/www/brightness.js",
-        "id": "cordova.plugin.Brightness.Brightness",
-        "clobbers": [
-            "cordova.plugins.brightness"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-calendar/www/Calendar.js",
-        "id": "cordova-plugin-calendar.Calendar",
-        "clobbers": [
-            "Calendar"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-calendar/test/tests.js",
-        "id": "cordova-plugin-calendar.tests"
-    },
-    {
-        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
-        "id": "org.apache.cordova.dialogs.notification",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.globalization/www/GlobalizationError.js",
-        "id": "org.apache.cordova.globalization.GlobalizationError",
-        "clobbers": [
-            "window.GlobalizationError"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.globalization/www/globalization.js",
-        "id": "org.apache.cordova.globalization.globalization",
-        "clobbers": [
-            "navigator.globalization"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.ionic.keyboard": "1.0.4",
     "cordova-plugin-console": "1.0.1",
     "cordova-plugin-device": "1.0.1",
     "cordova-plugin-splashscreen": "2.1.0",
+    "cordova-plugin-statusbar": "1.0.1",
     "cordova-plugin-whitelist": "1.0.0",
-    "ionic-plugin-deploy": "0.4.0",
-    "org.apache.cordova.statusbar": "0.1.10",
-    "org.pushandplay.cordova.apprate": "1.1.7",
-    "cordova-plugin-admob": "2.2.0",
-    "cordova-plugin-actionsheet": "2.0.1",
-    "cordova-plugin-camera": "1.2.0",
-    "cordova-plugin-ble-central": "1.0.2",
-    "de.appplant.cordova.plugin.badge": "0.7.1",
-    "cordova-plugin-bluetooth-serial": "0.4.4",
-    "phonegap-plugin-barcodescanner": "4.0.1",
-    "cordova.plugin.Brightness": "0.1.1",
-    "cordova-plugin-calendar": "4.4.4",
-    "org.apache.cordova.dialogs": "0.3.0",
-    "org.apache.cordova.globalization": "0.3.4",
-    "com.google.admobsdk": "6.12.2",
-    "de.appplant.cordova.common.registerusernotificationsettings": "1.0.1"
+    "ionic-plugin-keyboard": "1.0.7"
 }
 // BOTTOM OF METADATA
 });

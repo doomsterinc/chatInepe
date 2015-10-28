@@ -1,12 +1,4 @@
 {
-  "name": "InepeApp",
-  "app_id": "89255473",
-  "gulpStartupTasks": [
-    "sass",
-    "watch"
-  ],
-  "watchPatterns": [
-    "www/**/*",
-    "!www/lib/**/*"
-  ]
+  "name": "chatfake",
+  "app_id": ""
 }

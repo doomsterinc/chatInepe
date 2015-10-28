@@ -31,155 +31,18 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.ionic.keyboard": {
+    "cordova-plugin-statusbar": {
         "source": {
             "type": "registry",
-            "id": "com.ionic.keyboard"
+            "id": "cordova-plugin-statusbar"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "ionic-plugin-deploy": {
+    "ionic-plugin-keyboard": {
         "source": {
             "type": "registry",
-            "id": "ionic-plugin-deploy"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "org.apache.cordova.statusbar": {
-        "source": {
-            "type": "registry",
-            "id": "org.apache.cordova.statusbar"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "org.pushandplay.cordova.apprate": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/pushandplay/cordova-plugin-apprate.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "org.apache.cordova.dialogs": {
-        "source": {
-            "type": "registry",
-            "id": "org.apache.cordova.dialogs"
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
-    "org.apache.cordova.globalization": {
-        "source": {
-            "type": "registry",
-            "id": "org.apache.cordova.globalization"
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
-    "cordova-plugin-admob": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/floatinghotpot/cordova-plugin-admob.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "com.google.admobsdk": {
-        "source": {
-            "type": "registry",
-            "id": "com.google.admobsdk"
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
-    "com.google.playservices": {
-        "source": {
-            "type": "registry",
-            "id": "com.google.playservices@19.0.0"
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
-    "cordova-plugin-actionsheet": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-camera": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-camera"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-ble-central": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/don/cordova-plugin-ble-central.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "de.appplant.cordova.plugin.badge": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/katzer/cordova-plugin-badge.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "de.appplant.cordova.common.registerusernotificationsettings": {
-        "source": {
-            "type": "registry",
-            "id": "de.appplant.cordova.common.registerusernotificationsettings"
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
-    "cordova-plugin-bluetooth-serial": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/don/BluetoothSerial.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "phonegap-plugin-barcodescanner": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/wildabeast/BarcodeScanner.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova.plugin.Brightness": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/fiscal-cliff/phonegap-plugin-brightness.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-calendar": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git",
-            "subdir": "."
+            "id": "ionic-plugin-keyboard"
         },
         "is_top_level": true,
         "variables": {}

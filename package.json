@@ -1,7 +1,7 @@
 {
-  "name": "inepeapp",
+  "name": "chatfake",
   "version": "1.0.0",
-  "description": "InepeApp: An Ionic project",
+  "description": "chatfake: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
@@ -19,8 +19,8 @@
     "cordova-plugin-console",
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
-    "com.ionic.keyboard",
-    "ionic-plugin-deploy"
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [
     "ios"
