@@ -1,5 +1,5 @@
 angular
-  .module('whatsapp')
+  .module('chatInepe')
   .controller('ChatDetailCtrl', ChatDetailCtrl);
  
 function ChatDetailCtrl ($scope, $stateParams, Chats) {

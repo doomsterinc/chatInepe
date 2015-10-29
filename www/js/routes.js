@@ -1,5 +1,5 @@
 angular
-  .module('whatsapp')
+  .module('chatInepe')
   .config(config);
  
 function config ($stateProvider, $urlRouterProvider) {

@@ -1,5 +1,5 @@
 .angular
-	.module('chatfake')
+	.module('chatInepe')
 	.filter('calendar', calendar);
 
 function calendar () {
