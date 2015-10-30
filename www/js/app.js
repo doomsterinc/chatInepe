@@ -2,5 +2,6 @@
 angular
   .module('chatInepe', [
     'ionic',
-    'chatInepe.services'
+    'chatInepe.services',
+    'angular-meteor'
   ]);
