@@ -2,7 +2,7 @@ angular
   .module('chatInepe')
   .directive('input', input);
  
-// A directiva permite o envio de mensagem ao tocar enter
+// A diretiva permite o envio de mensagem ao tocar enter
 // e expor os eventos focus e blur para ajustar a view
 // quando o teclado abre e fecha
 function input ($timeout) {
