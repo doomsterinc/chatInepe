@@ -1,26 +1,42 @@
 angular
-  .module('chatInepe')
-  .controller('ChatDetailCtrl', ChatDetailCtrl);
- 
-function ChatDetailCtrl ($scope, $stateParams, $timeout, $ionicScrollDelegate) {
-  $scope.chat = $scope.$meteorObject(Chats, $stateParams.chatId, false);
+.module('chatInepe')
+.controller('ChatDetailCtrl', ChatDetailCtrl);
 
-  $scope.messages = $scope.$meteorCollection(function () {
-    return Messages.find({ chatId: $stateParams.chatId });
-  }, false);
+function ChatDetailCtrl ($scope, $stateParams, $timeout, $ionicScrollDelegate, $meteor) {
+	$scope.chat = $scope.$meteorObject(Chats, $stateParams.chatId, false);
 
-  $scope.inputUp = inputUp;
-  $scope.inputDown = inputDown;
- 
+	$scope.messages = $scope.$meteorCollection(function () {
+		return Messages.find({ chatId: $stateParams.chatId });
+	}, false);
+
+	$scope.data = {};
+
+	$scope.sendMessage = sendMessage;
+	$scope.inputUp = inputUp;
+	$scope.inputDown = inputDown;
+
   ////////////
- 
-  function inputUp () {
-    $timeout(function() {
-      $ionicScrollDelegate.$getByHandle('chatScroll').scrollBottom(true);
-    }, 300);
+
+  function sendMessage () {
+  	if (_.isEmpty($scope.data.message)) {
+  		return;
+  	}
+
+  	$meteor.call('newMessage', {
+  		text: $scope.data.message,
+  		chatId: $stateParams.chatId
+  	});
+
+  	delete $scope.data.message;
   }
- 
+
+  function inputUp () {
+  	$timeout(function() {
+  		$ionicScrollDelegate.$getByHandle('chatScroll').scrollBottom(true);
+  	}, 300);
+  }
+
   function inputDown () {
-    $ionicScrollDelegate.$getByHandle('chatScroll').resize();
+  	$ionicScrollDelegate.$getByHandle('chatScroll').resize();
   }
 }
