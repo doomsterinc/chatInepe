@@ -15,12 +15,12 @@ function LoginCtrl ($scope, $state, $ionicLoading, $ionicPopup, $log) {
     }
  
     var confirmPopup = $ionicPopup.confirm({
-      title: 'Number confirmation',
-      template: '<div>' + $scope.data.phone + '</div><div>Is your phone number above correct?</div>',
+      title: 'Número para confirmação: ',
+      template: '<div>' + $scope.data.phone + '</div><div>Seu número de telefone está correto?</div>',
       cssClass: 'text-center',
-      okText: 'Yes',
+      okText: 'Sim',
       okType: 'button-positive button-clear',
-      cancelText: 'edit',
+      cancelText: 'Editar',
       cancelType: 'button-dark button-clear'
     });
  
@@ -30,7 +30,7 @@ function LoginCtrl ($scope, $state, $ionicLoading, $ionicPopup, $log) {
       }
  
       $ionicLoading.show({
-        template: 'Sending verification code...'
+        template: 'Enviando código de verificação...'
       });
  
       Accounts.requestPhoneVerification($scope.data.phone, function (err) {
@@ -40,17 +40,17 @@ function LoginCtrl ($scope, $state, $ionicLoading, $ionicPopup, $log) {
           return handleError(err);
         }
  
-        $state.go('confirmation', { phone: $scope.data.phone });
+        $state.go('Confirmação', { phone: $scope.data.phone });
       });
     });
   }
  
   function handleError (err) {
-    $log.error('Login error ', err);
+    $log.error('Erro Login', err);
  
     $ionicPopup.alert({
-      title: err.reason || 'Login failed',
-      template: 'Please try again',
+      title: err.reason || 'Login ou senha incorretos!',
+      template: 'Por favor, tente novamente!,
       okType: 'button-positive button-clear'
     });
   }
