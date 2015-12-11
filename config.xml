@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.chatfake979636" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>chatfake</name>
+  <name>chatINEPE</name>
   <description>
-        Example
+        Ionic Chat for INEPE
     </description>
-  <author email="doomsterinc1@gmail.com" href="http://inepe.com.b/">
+  <author email="maicon.giovani@inepe.com.br" href="http://inepe.com.br/">
       Inepe Team
     </author>
   <content src="index.html"/>
